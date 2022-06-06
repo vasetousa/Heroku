@@ -79,7 +79,16 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    },
+    'second': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd8h8bm0da8dj3v',
+        'USER': 'gammelgzyhcppz',
+        'PASSWORD': '80384182d5a656e976095eab193698792c6b4e935332fabf6b8f18f6205c2de7',
+        'HOST': 'ec2-52-30-67-143.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432',
     }
+
 }
 
 # Password validation
