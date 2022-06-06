@@ -13,6 +13,8 @@ import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+import cloudinary
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
@@ -132,6 +134,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = 'static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
+)
+
+cloudinary.config(
+  cloud_name = "hgplq0uvu",
+  api_key = "299763437685343",
+  api_secret = "LBwuc5NDglT7RrTjunpka8HhunE"
 )
 
 # Default primary key field type
